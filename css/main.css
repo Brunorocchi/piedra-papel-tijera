@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --clr-gold: #DCC48E;
+    --clr-beige: #EAEFD3;
+    --clr-purple: #27233A;
+}
+
+body {
+    background-color: var(--clr-purple);
+    color: var(--clr-beige);
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    position: relative;
+    background-color: var(--clr-gold);
+    padding: 1rem 2rem;
+    color: var(--clr-purple);
+    border-radius: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nombre-jugador {
+    position: absolute;
+    right: 85%;
+    color: var(--clr-beige);
+    background-color: var(--clr-purple);
+    border: 2px solid var(--clr-gold);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+
+}
+
+.nombre-computadora {
+    position: absolute;
+    left: 85%;
+    color: var(--clr-beige);
+    background-color: var(--clr-purple);
+    border: 2px solid var(--clr-gold);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.puntos {
+    font-size: 2rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.elegi-tu-arma .armas .arma {
+    font-size: 1.5rem;
+    background-color: var(--clr-beige);
+    border: 0;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8rem;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-purple);
+    background-color: var(--clr-gold);
+    border-radius: 0.25rem;
+    padding-inline: 0.25rem;
+}
+
+.bruno {
+    
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-beige);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--clr-purple);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.disabled {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
